@@ -14,7 +14,7 @@ const auth =function(req,res, next){
    next();
   }else{
     return res.status(401).send({
-      success: 'Authentication failure',
+      failure: 'Authentication failure',
       message: 'Authentication key mismatch!',
     });
   }
